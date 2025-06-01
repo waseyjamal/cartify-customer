@@ -30,6 +30,7 @@ class _viewProductState extends State<viewProduct> {
     final selectedProduct = arguments['data'];
 
     return Scaffold(
+      appBar: AppBar(backgroundColor: Colors.white,),
       body: Container(
         color: Colors.white,
         child: StreamBuilder(
@@ -46,23 +47,27 @@ class _viewProductState extends State<viewProduct> {
                     children: [
                       Card(
                         elevation: 3,
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.only(
-                              bottomLeft: Radius.circular(20),
-                              bottomRight: Radius.circular(20)),
-                          child: CachedNetworkImage(
-                            fit: BoxFit.cover,
-                            imageUrl: "${product['ImageURL'] ?? ""}",
-                            placeholder: (context, url) => Transform.scale(
-                              scaleX: 0.5,
-                              scaleY: 0.5,
-                              child: CircularProgressIndicator(
-                                color: Colors.blue,
-                                strokeWidth: 12,
+                        child: SizedBox(
+                          width: size.width,
+                          height: size.height*0.38,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.only(
+                                bottomLeft: Radius.circular(20),
+                                bottomRight: Radius.circular(20)),
+                            child: CachedNetworkImage(
+                              fit: BoxFit.cover,
+                              imageUrl: "${product['ImageURL'] ?? ""}",
+                              placeholder: (context, url) => Transform.scale(
+                                scaleX: 0.5,
+                                scaleY: 0.5,
+                                child: CircularProgressIndicator(
+                                  color: Colors.blue,
+                                  strokeWidth: 12,
+                                ),
                               ),
+                              errorWidget: (context, url, error) =>
+                                  Icon(Icons.error),
                             ),
-                            errorWidget: (context, url, error) =>
-                                Icon(Icons.error),
                           ),
                         ),
                       ),
@@ -242,6 +247,9 @@ class _viewProductState extends State<viewProduct> {
                                     fontSize: 17),
                               )),
                             ),
+                          ),
+                          SizedBox(
+                            height: size.height*0.015,
                           )
                         ],
                       ),

@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cartify/controller/cartController.dart';
+import 'package:cartify/route/routeName.dart';
 import 'package:cartify/screen/dropDown.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -32,14 +33,18 @@ class _CartScreenState extends State<cartScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         backgroundColor: Colors.white,
-        title: Text(
-          'Cart',
-          style: TextStyle(
-            fontWeight: FontWeight.w500,
-            fontSize: size.width * 0.045,
+        title: Center(
+          child: Text(
+            'Cart',
+            style: TextStyle(
+              fontWeight: FontWeight.w500,
+              fontSize: size.width * 0.055,
+            ),
           ),
         ),
+        
         
       ),
       body: SingleChildScrollView(

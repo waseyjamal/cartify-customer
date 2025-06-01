@@ -45,16 +45,20 @@ class _loginScreenState extends State<loginScreen> {
                 clipBehavior: Clip.none,
                 children: [
                   SizedBox(
+                    
                     width: size.width,
-                    height: size.height / 2.838,
+                    height: size.height / 2.6,
                     child: Column(
+                      
                       children: [
                         SafeArea(
                           child: Image(
+                            
+                           // color: Colors.amber,
                             image: AssetImage('asset/Cartify.png'),
                             fit: BoxFit.contain,
                             width: size.width,
-                            height: size.height / 3.15,
+                            height: size.height / 3.7,
                           ),
                         ),
                       ],
@@ -62,7 +66,7 @@ class _loginScreenState extends State<loginScreen> {
                   ),
                 ],
               ),
-              SizedBox(height: 15),
+              SizedBox(height: 1),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

@@ -126,7 +126,7 @@ class _CustomGridViewState extends State<CustomGridView> {
                       // fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SizedBox(height: size.height * 0.018),
+                  SizedBox(height: size.height * 0.01),
                   Row(
                     children: [
                       Text(

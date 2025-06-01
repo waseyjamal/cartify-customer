@@ -1,0 +1,89 @@
+// !$*UTF8*$!
+{
+  archiveVersion = 1;
+  classes = {
+  };
+  objectVersion = 55;
+  objects = {
+
+/* Begin PBXBuildFile section */
+    1D6058910D05DD3D006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6058900D05DD3D006BFB54 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+    1D6058900D05DD3D006BFB54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+    1D60588D0D05DD3D006BFB54 = {
+      isa = PBXGroup;
+      children = (
+        1D6058900D05DD3D006BFB54 /* main.m */,
+      );
+      sourceTree = "<group>";
+    };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+    1D6058A00D05DD3E006BFB54 /* Runner */ = {
+      isa = PBXNativeTarget;
+      buildConfigurationList = 1D6058A10D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Runner" */;
+      buildPhases = (
+      );
+      buildRules = (
+      );
+      dependencies = (
+      );
+      name = Runner;
+      productName = Runner;
+      productReference = 1D6058A20D05DD3E006BFB54 /* Runner.app */;
+      productType = "com.apple.product-type.application";
+    };
+/* End PBXNativeTarget section */
+
+/* Begin XCBuildConfiguration section */
+    1D6058A30D05DD3E006BFB54 /* Debug */ = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        CODE_SIGN_IDENTITY = "iPhone Developer";
+        ENABLE_BITCODE = NO;
+        INFOPLIST_FILE = Runner/Info.plist;
+        IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+        PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.runner;
+        PRODUCT_NAME = Runner;
+        SWIFT_VERSION = 5.0;
+        TARGETED_DEVICE_FAMILY = "1,2";
+      };
+      name = Debug;
+    };
+    1D6058A40D05DD3E006BFB54 /* Release */ = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        CODE_SIGN_IDENTITY = "iPhone Distribution";
+        ENABLE_BITCODE = NO;
+        INFOPLIST_FILE = Runner/Info.plist;
+        IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+        PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.runner;
+        PRODUCT_NAME = Runner;
+        SWIFT_VERSION = 5.0;
+        TARGETED_DEVICE_FAMILY = "1,2";
+      };
+      name = Release;
+    };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+    1D6058A10D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Runner" */ = {
+      isa = XCConfigurationList;
+      buildConfigurations = (
+        1D6058A30D05DD3E006BFB54 /* Debug */,
+        1D6058A40D05DD3E006BFB54 /* Release */,
+      );
+      defaultConfigurationIsVisible = 0;
+      defaultConfigurationName = Release;
+    };
+/* End XCConfigurationList section */
+
+  };
+  rootObject = 1D60588D0D05DD3D006BFB54;
+}

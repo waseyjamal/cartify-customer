@@ -31,7 +31,7 @@ class profileScreen extends StatelessWidget {
               SafeArea(
                 child: Padding(
                   padding: const EdgeInsets.only(top: 15, left: 15),
-                  child: Icon(Icons.arrow_back),
+                  //child: Icon(Icons.arrow_back),
                 ),
               ),
               Positioned(
