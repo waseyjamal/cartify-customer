@@ -60,13 +60,13 @@ class SetProfileImagecontroller extends GetxController {
     try {
       DocumentSnapshot snapshot =
           await FirebaseFirestore.instance
-              .collection('Profiles')
+              .collection('users')
               .doc(userId)
               .get();
 
       if (snapshot.exists) {
         var data = snapshot.data() as Map<String, dynamic>;
-        imageUrl.value = data['ImageURL'] ?? '';
+        imageUrl.value = data['imageUrl'] ?? '';
       } else {
         imageUrl.value = ''; // No image found for this user
       }
